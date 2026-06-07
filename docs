@@ -1,23 +1,45 @@
 docs/investigacion_EmirPerez.md
 
-# Investigación de Arquitectura de Software
+Investigación de Arquitectura de Software
 
-## Proyecto
+Proyecto
+
 Diseño arquitectónico y PoC para plataforma FinTech de créditos rápidos.
 
-## Alumno
+Alumno
+
 Emir Pérez
 
-## Introducción
+Introducción
 
-Una plataforma FinTech de créditos rápidos permite a los usuarios solicitar préstamos de manera digital, agilizando los procesos de evaluación, aprobación y gestión de pagos. La arquitectura del sistema debe garantizar seguridad, disponibilidad, rendimiento y escalabilidad debido al manejo de información financiera sensible.
+Una plataforma FinTech de créditos rápidos permite a los usuarios solicitar, aprobar y administrar préstamos de manera digital. Debido a que maneja información financiera sensible, la arquitectura debe garantizar seguridad, disponibilidad, escalabilidad y rendimiento.
 
-## Fase 1 - Investigación Conceptual
+Análisis de Arquitectura
 
-### ¿Qué es la arquitectura de software?
+Fortalezas del diseño
 
-La arquitectura de software es la estructura fundamental de un sistema, compuesta por sus componentes, relaciones e interacciones. Su objetivo es organizar el sistema para satisfacer requisitos funcionales y atributos de calidad como seguridad, escalabilidad y mantenibilidad.
+- Separación de responsabilidades entre los módulos del sistema.
+- Facilidad para mantener y actualizar componentes.
+- Posibilidad de integrar nuevos servicios financieros.
+- Gestión centralizada de la información de usuarios y créditos.
 
-## Análisis del Caso del Cajero Automático
+Debilidades identificadas
 
-Pendiente de completar.
+- Dependencia de la base de datos como punto crítico del sistema.
+- Riesgo de afectación del rendimiento ante un aumento significativo de usuarios.
+- Exposición de información sensible si no se implementan mecanismos adecuados de seguridad.
+- Posibles fallos en procesos críticos relacionados con la aprobación y pago de créditos.
+
+Propuestas de mejora
+
+- Implementar autenticación multifactor para los usuarios.
+- Utilizar cifrado para proteger la información financiera.
+- Incorporar respaldos automáticos y mecanismos de recuperación ante fallos.
+- Aplicar monitoreo continuo para detectar incidentes y problemas de rendimiento.
+- Diseñar componentes desacoplados mediante interfaces o servicios bien definidos.
+
+Comparación con el Caso del Cajero Automático
+
+El proyecto de plataforma FinTech de créditos rápidos se asemeja más al escenario monolítico por interfaces. En este modelo, los componentes del sistema pueden comunicarse mediante interfaces internas, compartiendo la misma base de código y permitiendo una integración más directa entre la lógica de negocio, el acceso a datos y los servicios financieros.
+
+La estructura es similar a un contenedor donde los módulos colaboran internamente para procesar solicitudes de crédito, validar información de usuarios y registrar operaciones financieras. Este enfoque facilita el desarrollo inicial y el mantenimiento del sistema, aunque puede requerir una evolución hacia arquitecturas más distribuidas conforme aumente la demanda de usuarios y servicios.
