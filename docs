@@ -1,1 +1,23 @@
 docs/investigacion_EmirPerez.md
+
+# Investigación de Arquitectura de Software
+
+## Proyecto
+Diseño arquitectónico y PoC para plataforma FinTech de créditos rápidos.
+
+## Alumno
+Emir Pérez
+
+## Introducción
+
+Una plataforma FinTech de créditos rápidos permite a los usuarios solicitar préstamos de manera digital, agilizando los procesos de evaluación, aprobación y gestión de pagos. La arquitectura del sistema debe garantizar seguridad, disponibilidad, rendimiento y escalabilidad debido al manejo de información financiera sensible.
+
+## Fase 1 - Investigación Conceptual
+
+### ¿Qué es la arquitectura de software?
+
+La arquitectura de software es la estructura fundamental de un sistema, compuesta por sus componentes, relaciones e interacciones. Su objetivo es organizar el sistema para satisfacer requisitos funcionales y atributos de calidad como seguridad, escalabilidad y mantenibilidad.
+
+## Análisis del Caso del Cajero Automático
+
+Pendiente de completar.
